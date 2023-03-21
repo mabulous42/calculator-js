@@ -14,19 +14,19 @@
 }
 
 .small {
-    background-color: grey;
+    background-color: rgb(32,33,36);
     border-radius: 10px;
     padding: 10px;
 }
 
 .display-screens{
-    border: 1px solid rgb(57, 58, 59);
+    border: 1px solid rgb(32,33,36);
     border-radius: 5px;
     background-color: inherit;
 }
 
 .display-screens:hover{
-    background-color: rgb(163, 161, 161);
+    background-color: rgb(66, 68, 73);
 }
 
 .display-screens:focus-within{
@@ -63,10 +63,34 @@ input{
     font-size: 25px;
     width: 80px;
     height: 40px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.123), 5px 5px 15px rgba(0, 0, 0, 0.301);
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.082), 5px 5px 15px rgba(0, 0, 0, 0.123);
     background: transparent;
     cursor: pointer;
     color: white;
     margin: 5px;
     border-radius: 5px;
+}
+
+.g{
+    background-color: rgb(95,99,104);
+}
+
+.g:hover{
+    background-color: rgb(88, 91, 95);
+}
+
+.g2{
+    background-color: rgb(60,64,67);
+}
+
+.g2:hover{
+    background-color: rgb(67, 71, 75);
+}
+
+.g3{
+    background-color: rgb(138,180,248);
+}
+
+.g3:hover{
+    background-color: rgb(134, 175, 240);
 }

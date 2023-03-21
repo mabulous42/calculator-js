@@ -13,6 +13,10 @@ function clr(screen) {
 }
 
 function cal() {
-    let answer = document.getElementById('display');
-    answer.value = eval(answer.value);
+    let display = document.getElementById('display');
+    if (display) {
+        display.value = eval(display.value);
+    }
+    console.log(display.value);
+    // document.getElementById('history').value = answer.value + " = ";
 }
