@@ -1,130 +1,77 @@
-* {
+*{
     padding: 0;
     margin: 0;
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.big {
-    background-color: whitesmoke;
-}
-
-.small {
-    background-color: black;
-    height: 65vh;
-    border-radius: 10px;
-}
-
-.bc {
-    /* font-size: 30px; */
-    /* padding: 0px 0 4px 0; */
-    margin-left: 10px;
-    /* border-radius: 100%; */
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif
-}
-
-body {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    background: rgba(10, 10, 10, 0.1)
-}
-
-.main {
-    position: relative;
+.big{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(57, 58, 59);
     display: flex;
     align-items: center;
-    flex-direction: column;
-    min-width: 300px;
-    padding: 15px 10px;
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.18);
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px
+    justify-content: center;
 }
 
-.display {
-    position: relative;
-    width: 80%;
-    height: 80px;
-    margin-bottom: 10px
-}
-
-.display #result {
-    font-size: 2em
-}
-
-.buttons {
-    margin-top: 20px;
-    width: 100%
-}
-
-.buttons button {
-    height: 50px;
-    width: 50px;
-    padding: 10px;
+.calculator{
+    background-color: black;
     border-radius: 10px;
-    background: none;
-    border: none;
+    padding: 20px;
+}
+
+.cal{
+    color: white;
+    font-size: 18px;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    padding-top: 30px;
+}
+
+.display input{
+    text-align: right;
+    flex: 1;
     outline: none;
-    margin: 0 10px;
+    font-size: 50px;
+    /* padding-top: 50px; */
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+input{
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.123), 5px 5px 15px rgba(0, 0, 0, 0.301); */
+    background: transparent;
     cursor: pointer;
-    font-size: 1.3em;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1)
+    color: white;
+    margin: 5px;
 }
 
-.buttons button:hover {
-    background: rgba(0, 0, 0, 0.2)
+.a{
+    background-color: rgb(168, 159, 159);
+    color: black;
 }
 
-#equalTo {
-    width: 125px;
-    background: #58D68D
+.b{
+    background-color: rgb(57, 58, 59);
 }
 
-#clear {
-    background: #FF8A65
+.zero{
+    background-color: rgb(57, 58, 59);
+    border-radius: 0;
+    width: 135px;
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 20px;
 }
 
-.dark_mode_btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 1.5em;
-    cursor: pointer;
-    background: none;
-    border: none;
-    outline: none
-}
-
-.dark_mode_active {
-    background: #1c1c25
-}
-
-.dark_mode_active button {
-    color: #ddd
-}
-
-.dark_mode_active #clear,
-#equalTo {
-    color: #000
-}
-
-.dark_mode_active #result {
-    color: #ddd
-}
-
-.dark_mode_active #history {
-    color: #ddd
-}
-
-#history {
-    position: absolute;
-    bottom: 5px;
-    right: 0
+.c{
+    background-color: rgb(253, 165, 1);
 }
