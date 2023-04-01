@@ -1,22 +1,28 @@
-function show(num) {
-    let display = document.getElementById('display');
+let display = document.getElementById('display');
+let input = document.getElementById("input");
+function show(num) {    
     if (display.value === '0') {
         display.value = num;
-    } else {
+    }
+    else {
         display.value += num;
-    }    
+    }
 }
 
 function clr(screen) {
-    let clear = document.getElementById('display');
-    clear.value = screen;
+    display.value = screen;
 }
 
 function cal() {
-    let display = document.getElementById('display');
-    if (display) {
-        display.value = eval(display.value);
-    }
+    display.value = eval(display.value);
     console.log(display.value);
-    // document.getElementById('history').value = answer.value + " = ";
+    // document.getElementById('history').value = show(input.value) + " = ";
+}
+
+function operator(join) {
+    display.value += join;
+}
+
+function squareRoot() {
+    display.value = Math.sqrt(display.value);
 }

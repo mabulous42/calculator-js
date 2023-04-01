@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,53 +23,53 @@
 
 
                 <div class="btns">
-                    <input class="g" type="button" value="Rad">
-                    <input class="g" type="button" value="Deg">
-                    <input class="g" type="button" value="x!">
-                    <input class="g" type="button" value="(">
-                    <input class="g" type="button" value=")">
-                    <input class="g" type="button" value="%">
-                    <input class="g" type="button" value="AC" onclick="clr('0')">
+                    <button class="g" type="button" value="Rad">Rad</button>
+                    <button class="g" type="button" value="Deg">Deg</button>
+                    <button class="g" type="button" value="x!">x!</button>
+                    <button class="g" type="button" value="(">(</button>
+                    <button class="g" type="button" value=")">)</button>
+                    <button class="g" type="button" value="%">%</button>
+                    <button class="g" type="button" value="AC" onclick="clr('0')">AC</button>
                 </div>
 
                 <div class="btns">
-                    <input class="g" type="button" value="lnv">
-                    <input class="g" type="button" value="sin">
-                    <input class="g" type="button" value="ln">
-                    <input class="g2" type="button" value="7" onclick="show('7')">
-                    <input class="g2" type="button" value="8" onclick="show('8')">
-                    <input class="g2" type="button" value="9" onclick="show('9')">
-                    <input class="g" type="button" value="÷" onclick="show('/')">
+                    <button class="g" type="button" value="lnv">lnv</button>
+                    <button class="g" type="button" value="sin">sin</button>
+                    <button class="g" type="button" value="ln">ln</button>
+                    <button class="g2" type="button" value="7" onclick="show('7')">7</button>
+                    <button class="g2" type="button" value="8" onclick="show('8')">8</button>
+                    <button class="g2" type="button" value="9" onclick="show('9')">9</button>
+                    <button class="g" type="button" value="÷" onclick="operator('/')">÷</button>
                 </div>
 
                 <div class="btns">
-                    <input class="g" type="button" value="π">
-                    <input class="g" type="button" value="cos">
-                    <input class="g" type="button" value="log">
-                    <input class="g2" type="button" value="4" onclick="show('4')">
-                    <input class="g2" type="button" value="5" onclick="show('5')">
-                    <input class="g2" type="button" value="6" onclick="show('6')">
-                    <input class="g" type="button" value="⨉" onclick="show('*')">
+                    <button class="g" type="button" value="π">π</button>
+                    <button class="g" type="button" value="cos">cos</button>
+                    <button class="g" type="button" value="log">log</button>
+                    <button class="g2" type="button" value="4" onclick="show('4')">4</button>
+                    <button class="g2" type="button" value="5" onclick="show('5')">5</button>
+                    <button class="g2" type="button" value="6" onclick="show('6')">6</button>
+                    <button class="g" type="button" value="⨉" onclick="operator('*')">⨉</button>
                 </div>
 
                 <div class="btns">
-                    <input class="g" type="button" value="e">
-                    <input class="g" type="button" value="tan">
-                    <input class="g" type="button" value="√">
-                    <input class="g2" type="button" value="1" onclick="show('1')">
-                    <input class="g2" type="button" value="2" onclick="show('2')">
-                    <input class="g2" type="button" value="3" onclick="show('3')">
-                    <input class="g" type="button" value="-" onclick="show('-')">
+                    <button class="g" type="button" value="e">e</button>
+                    <button class="g" type="button" value="tan">tan</button>
+                    <button class="g" type="button" value="√" onclick="squareRoot()">√</button>
+                    <button class="g2" type="button" value="1" onclick="show('1')">1</button>
+                    <button class="g2" type="button" value="2" onclick="show('2')">2</button>
+                    <button class="g2" type="button" value="3" onclick="show('3')">3</button>
+                    <button class="g" type="button" value="-" onclick="show('-')">-</button>
                 </div>
 
                 <div class="btns">
-                    <input class="g" type="button" value="Ans">
-                    <input class="g" type="button" value="EXP">
-                    <input class="g" type="button" value="xy">
-                    <input class="g2" type="button" value="0" onclick="show('0')">
-                    <input class="g2" type="button" value="." onclick="show('+')">
-                    <input class="g3" type="button" value="=" onclick="cal()">
-                    <input class="g" type="button" value="+" onclick="show('+')">
+                    <button class="g" type="button" value="Ans">Ans</button>
+                    <button class="g" type="button" value="EXP">EXP</button>
+                    <button class="g" type="button" value="xy">xy</button>
+                    <button class="g2" type="button" value="0" onclick="show('0')">0</button>
+                    <button class="g2" type="button" value="." onclick="show('.')">.</button>
+                    <button class="g3" type="button" value="=" onclick="cal()">=</button>
+                    <button class="g" type="button" value="+" onclick="operator('+')">+</button>
                 </div>
                 
             </form>
